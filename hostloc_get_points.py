@@ -12,7 +12,7 @@ def randomly_gen_uspace_url() -> list:
     # 访问小黑屋用户空间不会获得积分、生成的随机数可能会重复，这里多生成两个链接用作冗余
     for i in range(12):
         uid = random.randint(10000, 45000)
-        url = "https://www.hostloc.com/space-uid-{}.html".format(str(uid))
+        url = "https://hostloc.com/space-uid-{}.html".format(str(uid))
         url_list.append(url)
     return url_list
 
